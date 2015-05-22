@@ -61,6 +61,10 @@ exec "set <A-".c.">=\e".c
 endw
 set ttimeout ttimeoutlen=50 "a crucial setting let us distinguish combination and seperate key press
 
+"map scroll up/down to default key settings
+map <M-e> <C-e>
+map <M-y> <C-y>
+
 "set the width of the NERDTree window
 "let g:NERDTreeWinSize=20
 "NERDTree auto start
