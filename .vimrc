@@ -52,10 +52,14 @@ set whichwrap+=h,l
 set colorcolumn=110
 highlight ColorColumn ctermbg=darkgray
 
-"new hotkey for cscope
-execute "set <M-m>=\em"
-"new hotkey for c-support
-execute "set <M-j>=\ej"
+"map all the alt combination keys with <ESC>
+let c='a'
+while c <= 'z'
+exec "set <A-".c.">=\e".c
+    exec "imap \e".c." <A-".c.">"
+    let c = nr2char(1+char2nr(c))
+endw
+set ttimeout ttimeoutlen=50 "a crucial setting let us distinguish combination and seperate key press
 
 "set the width of the NERDTree window
 "let g:NERDTreeWinSize=20
