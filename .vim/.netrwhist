@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/huang/Project/cs631/bare_bones'
+let g:netrw_dirhist_2='scp://pi@10.0.0.30//home/pi/'
+let g:netrw_dirhist_3='scp://pi@10.0.0.30/'
+let g:netrw_dirhist_4='scp://pi@10.0.0.30//home/pi/cs631/'
+let g:netrw_dirhist_5='scp://pi@10.0.0.30/'
